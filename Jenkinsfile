@@ -3,12 +3,12 @@ pipeline{
     stages{
        stage("Install dependency"){
             steps{
-                bat "npm install"
+                sh "npm install"
             }
        }
        stage("Run application"){
         steps{
-            bat "npm start"
+            sh "npm start"
         }
        }
     }
